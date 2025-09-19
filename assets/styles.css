@@ -159,6 +159,7 @@ body {
 #btn-9 { top: 382px; left: 202px; }
 
 #btn-0 { top: 410px; left: 142px; }
+#btn-asterisco { top: 410px; left: 200px; }
 
 #delete {
   position: absolute;
@@ -184,4 +185,28 @@ body {
 
 #computer-trigger:active {
   transform: scale(0.95) rotate(-2deg);
+}
+
+#show-message {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#show-message:hover {
+  background-color: #0056b3;
+}
+
+.debug-output {
+  margin-top: 10px;
+  font-family: monospace;
+  background-color: #222;
+  color: #0f0;
+  padding: 8px;
+  border-radius: 4px;
 }

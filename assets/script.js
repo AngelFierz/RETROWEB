@@ -9,7 +9,8 @@ const buttons = {
   '7': ['P', 'Q', 'R', 'S', '7'],
   '8': ['T', 'U', 'V', '8'],
   '9': ['W', 'X', 'Y', 'Z', '9'],
-  '0': ['0', ' '] 
+  '0': ['0', ' '],
+  '*': ['*', '_', '-', '@','#', '¿', '?', '¡', '!'] 
 };
 
 // Variables de estado para controlar la escritura
@@ -23,6 +24,13 @@ const outputText = document.getElementById('output-text'); // Pantalla del Nokia
 const keys = document.querySelectorAll('.key');            // Botones del teclado
 const deleteBtn = document.getElementById('delete');       // Botón de borrar
 const tvContent = document.getElementById('tv-content');   // Imagen dentro de la TV
+
+const showMessageBtn = document.getElementById('show-message');
+const fullMessage = document.getElementById('full-message');
+
+showMessageBtn.addEventListener('click', () => {
+  fullMessage.textContent = output || '[Mensaje vacío]';
+});
 
 // escucha clics en cada tecla del teclado de Niko Bellic
 keys.forEach(key => {
