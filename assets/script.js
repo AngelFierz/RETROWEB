@@ -77,11 +77,11 @@ function confirmLetter() {
   }
 }
 
-// 🔊 Constantes: ícono de computadora y sonido de inicio XP
+// ícono de computadora y sonido de inicio XP
 const computerTrigger = document.getElementById('computer-trigger');
 const computerSound = new Audio('images/windows-xp-startup_1ph012n.mp3'); // Sonido de inicio XP
 
-// 🧠 Evento: clic en el ícono de computadora
+// clic en el ícono de computadora
 computerTrigger.addEventListener('click', () => {
   computerSound.currentTime = 0; // Reinicia el sonido desde el principio
   computerSound.play();         // Lo reproduce
