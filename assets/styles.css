@@ -1,0 +1,187 @@
+/* eestructura principal ouyeah */
+body {
+  background-color: rgb(34, 33, 33);
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+}
+
+#top-bar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #064fa1;
+  color: lime;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  border-bottom: 5px solid #0e5dd3;
+  z-index: 1000;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 1px 0 red, -2px 0 blue; }
+  25% { text-shadow: -1px 0 lime, 2px 0 magenta; }
+  50% { text-shadow: 1px 0 cyan, -2px 0 yellow; }
+  75% { text-shadow: -2px 0 red, 2px 0 blue; }
+  100% { text-shadow: 2px 0 lime, -2px 0 magenta; }
+}
+
+#top-bar h1 {
+  animation: glitch 1s infinite;
+}
+
+#top-bar h1 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#status-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+}
+
+#status-icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Nokia y la tonta tv */
+#nokia-wrapper {
+  position: relative;
+  width: 360px;
+  margin: 60px auto 0;
+}
+
+#nokia-img {
+  width: 100%;
+  display: block;
+}
+
+#tv-wrapper {
+  position: relative;
+  width: 360px;
+  margin: 40px auto;
+}
+
+#tv-img {
+  width: 116%;
+  display: block;
+}
+
+#tv-screen {
+  position: absolute;
+  top: 64px; 
+  left: 52px;
+  width: 250px;
+  height: 160px;
+  overflow: hidden;
+  background-color: #06060600;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tv-content {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: contrast(1.2) brightness(0.9);
+}
+
+/* pantalla del phone del gta4 */
+#screen {
+  position: absolute;
+  top: 130px;
+  left: 75px;
+  width: 178px;
+  height: 80px;
+  background-color: rgb(108 135 135);
+  color: lime;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#output-text {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Botones del GTA 4 PHONNEEE */
+.key {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  font-size: 12px;
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  text-align: center;
+  cursor: grab;
+}
+
+.key span {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.key:active {
+  box-shadow: 0 0 10px rgb(0, 255, 0);
+  background-color: rgba(11, 231, 11, 0.1);
+  transform: scale(0.95);
+}
+
+/* Posiciones individuales, esta las movi desde el navegador en inspeccion por si las dudas jejej */
+#btn-1 { top: 325px; left: 100px; }
+#btn-2 { top: 325px; left: 148px; }
+#btn-3 { top: 325px; left: 196px; }
+
+#btn-4 { top: 349px; left: 100px; }
+#btn-5 { top: 350px; left: 146px; }
+#btn-6 { top: 355px; left: 200px; }
+
+#btn-7 { top: 380px; left: 100px; }
+#btn-8 { top: 382px; left: 145px; }
+#btn-9 { top: 382px; left: 202px; }
+
+#btn-0 { top: 410px; left: 142px; }
+
+#delete {
+  position: absolute;
+  top: 405px;
+  left: 70px;
+  width: 60px;
+  height: 20px;
+  background-color: rgba(139, 0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: crosshair;
+}
+
+/* icono de computadora*/
+#computer-trigger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#computer-trigger:active {
+  transform: scale(0.95) rotate(-2deg);
+}

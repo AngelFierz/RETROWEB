@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RETROWEB 200X</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <!-- Barra superior, Solo vanidad. -->
+  <div id="top-bar">
+    <h1>RETROWEB 200X</h1>
+    <div id="status-icons">
+      <img src="images/computer.png" alt="computer" id="computer-trigger" />
+      <span class="battery">!</span>
+      <span class="time">4:00 PM</span>
+    </div>
+  </div>
+
+  <!-- Contenido principal, basicamente las imagenes -->
+  <div id="nokia-wrapper">
+    <img src="images/nokia.png" alt="Nokia Phone" id="nokia-img" />
+
+    <div id="tv-wrapper">
+      <img src="images/tvhead.png" alt="Televisión" id="tv-img" />
+      <div id="tv-screen">
+        <img id="tv-content" src="images/Television_static.gif" alt="Contenido reactivo" />
+      </div>
+    </div>
+
+    <div id="screen">
+      <p id="output-text"></p>
+    </div>
+
+    <!-- Botones individuales -->
+    <button class="key" data-key="1" id="btn-1">1</button>
+    <button class="key" data-key="2" id="btn-2">2<br><span></span></button>
+    <button class="key" data-key="3" id="btn-3">3<br><span></span></button>
+    <button class="key" data-key="4" id="btn-4">4<br><span></span></button>
+    <button class="key" data-key="5" id="btn-5">5<br><span></span></button>
+    <button class="key" data-key="6" id="btn-6">6<br><span></span></button>
+    <button class="key" data-key="7" id="btn-7">7<br><span></span></button>
+    <button class="key" data-key="8" id="btn-8">8<br><span></span></button>
+    <button class="key" data-key="9" id="btn-9">9<br><span></span></button>
+    <button class="key" data-key="0" id="btn-0">0</button>
+    <button id="delete"></button>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
