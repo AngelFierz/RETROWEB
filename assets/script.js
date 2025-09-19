@@ -110,6 +110,20 @@ function updateTV(text) {
     tvContent.src = 'images/cat.gif';
   } else if (lowerText.includes('sabado')) {
     tvContent.src = 'images/sabado.gif';
+  } else if (lowerText.includes('seguramente')) {
+    tvContent.src = 'images/seguramente.jpeg';
+  } else if (lowerText.includes('akane')) {
+    tvContent.src = 'images/akane.jpg';
+  } else if (lowerText.includes('perro mamon')) {
+    tvContent.src = 'images/perromamon.png';
+  } else if (lowerText.includes('feliz')) {
+    tvContent.src = 'images/feliz.png';
+  } else if (lowerText.includes('sebas')) {
+    tvContent.src = 'images/sebastian.png'; 
+  } else if (lowerText.includes('carlos')) {
+    tvContent.src = 'images/Torres.png'; 
+  } else if (lowerText.includes('torres')) {
+    tvContent.src = 'images/Torres.png';
   } else {
     tvContent.src = 'images/Television_static.gif'; // Imagen por defecto (pantalla vacía)
   }
