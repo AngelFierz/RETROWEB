@@ -32,7 +32,7 @@ showMessageBtn.addEventListener('click', () => {
   fullMessage.textContent = output || '[Mensaje vacío]';
 });
 
-// escucha clics en cada tecla del teclado de Niko Bellic
+// escucha clics en cada tecla del teclado del Niko Bellic
 keys.forEach(key => {
   key.addEventListener('click', () => {
     const keyValue = key.dataset.key; // Obtiene el valor de la tecla presionada
@@ -121,7 +121,7 @@ function updateTV(text) {
   } else if (lowerText.includes('sebas')) {
     tvContent.src = 'images/sebastian.png'; 
   } else if (lowerText.includes('carlos')) {
-    tvContent.src = 'images/Torres.png'; 
+    tvContent.src = 'images/ned.png'; 
   } else if (lowerText.includes('torres')) {
     tvContent.src = 'images/ned.png';
   } else {
