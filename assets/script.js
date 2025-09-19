@@ -1,15 +1,15 @@
 // Cada número está asociado a un conjunto de letras, como en los celulares antiguos
 const buttons = {
   '1': ['1'],
-  '2': ['A', 'B', 'C'],
-  '3': ['D', 'E', 'F'],
-  '4': ['G', 'H', 'I'],
-  '5': ['J', 'K', 'L'],
-  '6': ['M', 'N', 'O'],
-  '7': ['P', 'Q', 'R', 'S'],
-  '8': ['T', 'U', 'V'],
-  '9': ['W', 'X', 'Y', 'Z'],
-  '0': ['0 '] 
+  '2': ['A', 'B', 'C', '2'],
+  '3': ['D', 'E', 'F', '3'],
+  '4': ['G', 'H', 'I', '4'],
+  '5': ['J', 'K', 'L', '5'],
+  '6': ['M', 'N', 'O', '6'],
+  '7': ['P', 'Q', 'R', 'S', '7'],
+  '8': ['T', 'U', 'V', '8'],
+  '9': ['W', 'X', 'Y', 'Z', '9'],
+  '0': ['0', ' '] 
 };
 
 // Variables de estado para controlar la escritura
@@ -24,7 +24,7 @@ const keys = document.querySelectorAll('.key');            // Botones del teclad
 const deleteBtn = document.getElementById('delete');       // Botón de borrar
 const tvContent = document.getElementById('tv-content');   // Imagen dentro de la TV
 
-// escucha clics en cada tecla del teclado Nokia
+// escucha clics en cada tecla del teclado de Niko Bellic
 keys.forEach(key => {
   key.addEventListener('click', () => {
     const keyValue = key.dataset.key; // Obtiene el valor de la tecla presionada

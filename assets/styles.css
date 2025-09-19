@@ -1,4 +1,4 @@
-/* eestructura principal ouyeah */
+/* Estructura principal ouyeah */
 body {
   background-color: rgb(34, 33, 33);
   margin: 0;
@@ -54,7 +54,7 @@ body {
   cursor: pointer;
 }
 
-/* Nokia y la tonta tv */
+/* Celular gta y la tonta tv */
 #nokia-wrapper {
   position: relative;
   width: 360px;
@@ -87,14 +87,14 @@ body {
   background-color: #06060600;
   border-radius: 4px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 #tv-content {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   filter: contrast(1.2) brightness(0.9);
 }
 
