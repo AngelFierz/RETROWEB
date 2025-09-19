@@ -123,7 +123,7 @@ function updateTV(text) {
   } else if (lowerText.includes('carlos')) {
     tvContent.src = 'images/Torres.png'; 
   } else if (lowerText.includes('torres')) {
-    tvContent.src = 'images/Torres.png';
+    tvContent.src = 'images/ned.png';
   } else {
     tvContent.src = 'images/Television_static.gif'; // Imagen por defecto (pantalla vacía)
   }
